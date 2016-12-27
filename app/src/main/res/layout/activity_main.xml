@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="net.glenx.storybook.ui.MainActivity">
+
+
+    <include layout="@layout/content_main"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/main_title"
+            android:id="@+id/MainTitle"
+            android:scaleType="fitXY"
+            android:contentDescription="Signlas from Mars"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true" />
+
+        <Button
+            android:text="Start your Adventure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:id="@+id/start"
+            android:textSize="24sp"
+            style="@android:style/Widget.DeviceDefault.Button"
+            android:layout_centerHorizontal="true"
+            android:background="@android:drawable/btn_default" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="@android:integer/config_shortAnimTime"
+            android:layout_above="@+id/start"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/nameEditText"
+            android:hint="Enter your name to begin"
+            android:minHeight="1dp"
+            android:textSize="24sp"
+            android:gravity="bottom"
+            android:elevation="1dp"
+            android:padding="6sp"
+            android:background="@android:color/background_light"
+            android:textAlignment="center"
+            android:lineSpacingExtra="18sp"
+            android:textColor="@android:color/darker_gray" />
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
